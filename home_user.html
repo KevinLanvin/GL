@@ -5,35 +5,92 @@
 	<meta http-equiv="Content-Language" content="fr" />
 	<title>Nom</title>
 
+	<!-- Material Design Lite -->
+    	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
 	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.amber-orange.min.css">
-	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    	<!-- Material Design icon font -->
+    	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="./css/my.css">
 </head>
 
 
 
-
-
 <body>
-	<div class="mdl-grid">
- 	<div class="mdl-cell mdl-cell--11-col">
-		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--color">Sélectionner un écran</button>
-	</div>
-	<div class="mdl-cell mdl-cell--1-col">
-		<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-  			<input type="checkbox" class="mdl-checkbox__input" disabled="disabled">
-		</label>
-	</div>
-	<div class="mdl-cell mdl-cell--11-col">
-		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--color">Importer un fichier</button>
-	</div>
-	<div class="mdl-cell mdl-cell--1-col">
-		<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-  			<input type="checkbox" class="mdl-checkbox__input" disabled="disabled">
-		</label>
-	</div>
-	<div class="mdl-cell mdl-cell--11-col">
-		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Diffuser !</button>
+	<!-- TABS -->
+	<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+		<div class="mdl-tabs__tab-bar">
+	      		<a href="#select_ecran" class="mdl-tabs__tab is-active">Selectionner un ecran</a>
+      			<a href="#select_file" class="mdl-tabs__tab">Importer un fichier</a>
+      			<a href="#display" class="mdl-tabs__tab">Diffuser</a>
+  		</div>
+
+	
+
+		<!-- SELECTION ECRAN -->
+		<div class="mdl-tabs__panel is-active" id="select_ecran">
+   			<div class="mdl-grid">
+ 				<div class="mdl-cell mdl-cell--12-col">
+					<h3>Sélectionnez ici les écrans sur lesquels vous voulez diffuser</h3>
+				</div>
+				<div class="mdl-cell mdl-cell--8-col">
+					<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+  					<thead>
+    						<tr>
+      							<th class="mdl-data-table__cell--non-numeric">Nom de l'ecran</th>
+      							<th class="mdl-data-table__cell--non-numeric">Identifiant</th>
+							<th class="mdl-data-table__cell--non-numeric">Localisation</th>
+    						</tr>
+  					</thead>
+  					<tbody>
+    						<tr>
+      							<td class="mdl-data-table__cell--non-numeric">Ecran 1</td>
+      							<th class="mdl-data-table__cell--non-numeric">E0001</th>
+      							<th class="mdl-data-table__cell--non-numeric">Batiment A - Etage 0</th>
+    						</tr>
+    						<tr>
+      							<td class="mdl-data-table__cell--non-numeric">Ecran 2</td>
+      							<th class="mdl-data-table__cell--non-numeric">E0002</th>
+      							<th class="mdl-data-table__cell--non-numeric">Batiment A - Etage 1</th>
+    						</tr>
+    						<tr>
+      							<td class="mdl-data-table__cell--non-numeric">Ecran 3</td>
+      							<th class="mdl-data-table__cell--non-numeric">E0003</th>
+      							<th class="mdl-data-table__cell--non-numeric">Batiment B - Etage 1</th>
+    						</tr>
+						<tr>	
+      							<td class="mdl-data-table__cell--non-numeric">Ecran 4</td>
+      							<th class="mdl-data-table__cell--non-numeric">E0004</th>
+      							<th class="mdl-data-table__cell--non-numeric">Batiment B - Etage 0</th>
+    						</tr>
+  					</tbody>
+					</table>
+				</div>
+				<div class="mdl-cell mdl-cell--4-col">
+					<a href="#">
+						<div class="demo-card-image mdl-card mdl-shadow--2dp">
+  							<div class="mdl-card__title mdl-card--expand"></div>
+  							<div class="mdl-card__actions">
+    								<span class="demo-card-image__filename">Flashez un écran</span>
+  							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+ 		</div>
+
+		<!-- SELECTION FICHIER -->
+		<div class="mdl-tabs__panel is-active" id="select_file">
+   			<div class="mdl-grid">
+ 				Test
+			</div>
+ 		</div>
+
+		<!-- DISPLAY -->
+		<div class="mdl-tabs__panel is-active" id="display">
+   			<div class="mdl-grid">
+ 				Test 2
+			</div>
+	 	</div>
 	</div>
 </body>
 </html>
